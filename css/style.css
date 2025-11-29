@@ -289,3 +289,35 @@ overflow: hidden;
     border-radius: 30px;
     font-size: 2.6rem;
 }
+#about-us p{
+    color: var(--text-color);
+    max-width: 700px;
+    margin-top: 20px;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+.project-container-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+.project-container-box{
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+.project-container-box span{
+    color: var(--text-color);
+    font-size: 3.4rem;;
+    font-weight: 400;
+
+}
+.project-container-box strong{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+/*Skills*/
