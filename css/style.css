@@ -381,5 +381,17 @@ padding: 3px 10px;
 .skill-box-bar{
     position: relative;
     width: 100%;
-    
+    height: 5px;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.skill-box-bar span{
+    background-color: var(--text-color);
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 30px;
 }
