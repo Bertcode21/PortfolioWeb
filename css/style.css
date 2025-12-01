@@ -369,9 +369,9 @@ overflow: hidden;
       font-weight: 500;
 }
 .skill-box-percentage{
-position: absolute;
-right: 29rem;  /*In the original iit is 10px*/
-top: 46rem;   /* here also in the original based on screen it is 10px*/
+position: relative;
+right: -175px;  /*In the original iit is 10px*/
+top: -70px;   /* here also in the original based on screen it is 10px*/
 border-radius: 10px;
 border: 1px solid var(--border-color);
 color: var(--text-color);
