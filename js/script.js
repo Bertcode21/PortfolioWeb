@@ -37,3 +37,29 @@ function typeRole(){
 /// start typing the first role here.
 typeRole();
 })
+
+
+//// Project Filtering code.
+document.addEventListener("DOMContentLoaded", function(){
+const filterButtons = document.querySelectorAll(".project-list li");
+const projects = document.querySelectorAll(".project-box");
+filterButtons.forEach((button) =>{
+   button.addEventListener("click", ()=>{
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+      /// to get the data value accoridng to which the user clicks.
+      const filter = button.getAttribute("data-filter");
+
+      // to get each project Box show and hide according to the filter.
+      projects.forEach((project) =>{
+         if(filter === "all" || project.getAttribute("data-category") === filter){
+            project.style.display = "block";
+         }
+         else{
+            project.style.display = "none";
+         }
+      })
+   })
+})
+
+})
