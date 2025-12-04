@@ -817,3 +817,15 @@ font-size: 0.7rem;
     font-size: 0.8rem;
     opacity: 0.6;
 }
+.swiper-pagination{
+    position: static !important;
+    margin-top: 15px;
+
+}
+.swiper-pagination-bullet{
+    background-color: var(--text-color) !important;
+    
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color) !important;
+}
