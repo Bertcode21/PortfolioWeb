@@ -1,0 +1,80 @@
+/* Contact Form Container */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Form Labels */
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Input & Textarea Styles */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 6px rgba(37, 117, 252, 0.5);
+}
+
+/* Send Button */
+.contact-form .btn-send {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: 700;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(101, 64, 245, 0.4);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  user-select: none;
+}
+
+.contact-form .btn-send:hover,
+.contact-form .btn-send:focus {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  box-shadow: 0 6px 15px rgba(101, 64, 245, 0.7);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .contact-form {
+    margin: 30px 15px;
+    padding: 25px 15px;
+  }
+
+  .contact-form .btn-send {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1rem;
+  }
+}

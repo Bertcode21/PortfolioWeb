@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - Bertcode_Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/fontawesome.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -65,23 +66,23 @@
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, please fill out the form below and send me a message.</p>
 
-        <form 
-          action="mailto:your.email@example.com" 
-          method="post" 
-          enctype="text/plain" 
-          class="contact-form"
-        >
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name" required placeholder="Your name" />
+        <form class="contact-form" 
+      action="https://api.web3forms.com/submit"
+      method="POST"
+>
+  <label for="name">Name</label>
+  <input type="hidden" name="access_key" value="828a61f3-8f96-44e8-a78d-458ff16d848c">
+  <input type="text" id="name" name="Name" required placeholder="Your name" />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" required placeholder="Your email address" />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="Email" required placeholder="Your email address" />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" rows="6" required placeholder="Write your message here"></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="Message" rows="6" required placeholder="Write your message here"></textarea>
 
-          <button type="submit" class="btn-send bg-gradient">Send Message</button>
-        </form>
+  <button type="submit" class="btn-send bg-gradient">Send Message</button>
+</form>
+
       </section>
     </div>
   </div>
@@ -91,6 +92,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!----aos Animation=====-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-------Sending Email on js---------->
+      <script src="js/email.js"></script>
     <script src="js/script.js"></script>
   
 </body>
