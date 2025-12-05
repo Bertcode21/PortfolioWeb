@@ -92,3 +92,50 @@ var swiper = new Swiper(".mySwiper", {
         },
       },
     });
+
+    /* Dark Light Mode  Toggle*/
+    document.addEventListener("DOMContentLoaded", function(){
+       const toggleButton = document.querySelector(".dark-light-btn");
+       const htmlElement = document.documentElement;
+
+       /// get the current mode
+       const currentMode = localStorage.getItem("mode");
+       if(currentMode === "light"){
+        htmlElement.classList.remove("dark");
+        toggleButton.innerHTML = "<i class='fa-regular fa-moon'></i>"
+       }
+       toggleButton.addEventListener("click", ()=>{
+         htmlElement.classList.toggle("light-mode");
+
+
+         ///update the button icon and store the mode in local storage
+          const isLightMode = htmlElement.classList.contains("light-mode");
+          toggleButton.innerHTML = isLightMode ? "<i class='fa-regular fa-moon'></i>" : "<i class='fa-regular fa-sun'></i>";
+      
+             // store the mode in the local storage.
+             localStorage.setItem("mode", isLightMode ? "light" : "dark");
+      
+                ///// nav auto active class code.
+               const Section = document.querySelectorAll("section");
+               const navLinks = document.querySelectorAll("ul li a");
+
+               function activateNavLink(){
+                  let currentSection = "";
+
+                  /// run a for each loop to get each section's top position
+                  Section.forEach((section) =>{
+                     const sectionTop = section.offsetTop;
+                     const sectionHeight = section.offsetHeight;
+
+                     // check if the scroll position is greater than or equal to the section top position
+                     if(window.scrollY  >= sectionTop - sectionHeight / 3){
+                        currentSection = section.getAttribute("id");
+                     }
+                  })
+               }
+      
+            })
+
+         
+
+    });

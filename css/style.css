@@ -26,6 +26,20 @@ ul{
 --bg-gradient-end: #272a2e;
 }
 
+/*Light-Mode*/
+:root.light-mode{
+--main-color: #78CC6D;
+--secondary-color: #5F85DB;
+--text-color: #222222;
+--bg-color: #ebebeb;
+--body-bg-color: #dadada;
+--border-color: #e0e0e0;
+--gradient-start: rgb(255, 255, 255);
+--gradient-end: #ececec;
+--bg-gradient-start: rgba(235, 235, 235);
+--bg-gradient-end: #dbdbdb;
+}
+
 body{
     color: var(--text-color);
     background-image: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end )) !important;
@@ -49,6 +63,8 @@ body{
 display: grid;
 grid-template-columns: 65px 1fr;
 grid-gap: 10px;
+position: sticky;
+top: 10px;
 
 }
 
@@ -137,6 +153,12 @@ visibility: visible;
     color: var(--text-color);
     border: none;
     outline: none;
+    cursor: pointer;
+}
+.dark-light-btn:hover, 
+header ul li a:hover,
+header ul li a.active{
+    color: var(--main-color);
 }
 /*------------------The main image------*/
 #img-cls{
@@ -869,4 +891,65 @@ font-size: 0.7rem;
     object-position: center;
     opacity: 0.6;
     transition: all ease 0.3s;
+}
+/*Contact*/
+#contact{
+border-radius: 0px 0px 30px 30px;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   margin-top: 40px;
+    grid-gap: 20px;
+}
+.contact-box{
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contact-box-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 10px;
+
+}
+.contact-box-icon i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+
+}
+.contact-box-icon strong{
+    color: var(--text-color);
+    opacity: 0.6;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.contact-box span{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    /* text-transform: uppercase; */
+
+}
+.contact-box-location{
+    grid-column: 1/3;
+}
+.contact-map{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    margin-top: 30px;
+    filter: grayscale(0.2);
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
