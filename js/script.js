@@ -155,3 +155,16 @@ var swiper = new Swiper(".mySwiper", {
 
     //// Initaialize AOS Animation
       AOS.init();
+
+
+//    document.getElementById('download-cv').addEventListener('click', function(e) {
+//   e.preventDefault(); // prevent default link behavior
+
+//   // Open the PDF in a new tab
+//   window.open('cv/my-cv-original.pdf', '_blank');
+
+//   // Redirect current tab to contact page after a short delay (e.g., 1 second)
+//   setTimeout(function() {
+//     window.location.href = 'contactme.html';
+//   }, 1000); // 1000ms = 1 second delay
+// });
