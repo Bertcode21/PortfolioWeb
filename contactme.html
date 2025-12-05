@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Bertcode_Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="menu-head">
+    <div class="profile-menu">
+      <!-- HEADER SECTION -->
+      <header>
+        <nav>
+          <button class="dark-light-btn bg-gradient">
+            <i class="fa-regular fa-sun"></i>
+          </button>
+          <ul>
+            <li><a href="index.html#about-us" data-label="About"><i class="fa solid fa-address-book"></i></a></li>
+            <li><a href="index.html#skills" data-label="Skills"><i class="fa solid fa-layer-group"></i></a></li>
+            <li><a href="index.html#services" data-label="Services"><i class="fa solid fa-screwdriver-wrench"></i></a></li>
+            <li><a href="index.html#prices" data-label="Pricing"><i class="fa solid fa-dollar-sign"></i></a></li>
+            <li><a href="index.html#projects" data-label="Project"><i class="fa solid fa-briefcase"></i></a></li>
+            <li><a href="index.html#edu-work" data-label="Resume"><i class="fa solid fa-file-lines"></i></a></li>
+            <li><a href="index.html#Testimonials" data-label="Testimonials"><i class="fa solid fa-comment-dots"></i></a></li>
+            <li><a href="#contact" class="active" data-label="Contact"><i class="fa solid fa-paper-plane"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- PROFILE CONTAINER -->
+      <div class="profile-container">
+        <div class="user-profile bg-gradient">
+          <div class="user-profile-container">
+            <div class="user-profile-img">
+              <img src="images/profileimg.jpg" alt="Bertcode" id="img-cls" />
+            </div>
+            <div class="user-profile-text">
+              <span>Web-Developer</span>
+              <h1>Bertcode.py</h1>
+              <div class="profile-social-container">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="user-profile-btns">
+            <a href="cv/my-web-cv1.docx" download target="_blank">Download CV</a>
+            <a href="mailto:your.email@example.com?subject=Contact%20From%20Website">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="all-content">
+      <section id="contact" class="section-container" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, please fill out the form below and send me a message.</p>
+
+        <form 
+          action="mailto:your.email@example.com" 
+          method="post" 
+          enctype="text/plain" 
+          class="contact-form"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" required placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" required placeholder="Your email address" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="6" required placeholder="Write your message here"></textarea>
+
+          <button type="submit" class="btn-send bg-gradient">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+    <!------link js her----->
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!----aos Animation=====-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  
+</body>
+</html>

@@ -953,3 +953,484 @@ border-radius: 0px 0px 30px 30px;
     object-fit: cover;
     object-position: center;
 }
+
+
+/* Contact Form Container */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Labels */
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Input & Textarea Styles */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #5a9df9; /* or your gradient main color */
+  outline: none;
+}
+
+/* Send Button */
+.contact-form .btn-send {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: 700;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(101, 64, 245, 0.4);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-form .btn-send:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  box-shadow: 0 6px 15px rgba(101, 64, 245, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 20px 15px;
+    margin: 30px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+/* ========================================================= */
+/*               UNIVERSAL MOBILE RESPONSIVENESS             */
+/* ========================================================= */
+@media (max-width: 768px) {
+
+  /* ---------------------- GRID FIX ------------------------ */
+  .menu-head,
+  .skills-box-container,
+  .service-container,
+  .project-container-about,
+  .plan-container,
+  .about-profile-us,
+  .pricing-box-feature,
+  .project-container,
+  .section-container {
+      grid-template-columns: 1fr !important;
+      width: 100% !important;
+  }
+
+  /* ---------------------- FLEX FIX ------------------------ */
+  .service-box-heading,
+  .skill-box,
+  .user-profile-btns,
+  .project-container-box {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;   /* fixed alignment */
+      text-align: center !important;
+      gap: 12px !important;
+  }
+
+  /* Prevent images from shrinking */
+  img {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+  }
+
+  /* Service icons FIX — EXACT STYLE YOU WANTED */
+  .service-box-heading .service-box-icon img {
+      width: 70px !important;
+      height: 70px !important;
+      object-fit: contain !important;
+      margin: 0 auto !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+  }
+
+  /* Contact section FIX — phone & email must align and fit */
+  .contact-info,
+  .contact-info-box {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+      width: 100% !important;
+      gap: 6px !important;
+      overflow-wrap: break-word !important;
+      word-break: break-word !important;
+  }
+
+  .contact-info-box i {
+      font-size: 1.6rem !important;
+      margin-bottom: 3px !important;
+  }
+
+  /* Fix containers cutting off */
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    overflow-x: hidden !important;
+  }
+
+  /* ---------------------- HEADER -------------------------- */
+  header ul {
+      grid-template-columns: repeat(4, 1fr) !important;
+      width: 100% !important;
+      padding: 8px !important;
+      border-radius: 15px !important;
+  }
+
+  header ul li a {
+      width: 42px !important;
+      height: 42px !important;
+      font-size: 0.9rem !important;
+  }
+
+  /* Disable tooltips */
+  header ul li a::before,
+  header ul li a::after {
+      display: none !important;
+  }
+
+  /* ---------------------- PROFILE -------------------------- */
+  .profile-menu {
+      grid-template-columns: 1fr !important;
+      position: static !important;
+      width: 100% !important;
+  }
+
+  #img-cls {
+      width: 100% !important;
+      height: auto !important;
+  }
+
+  .user-profile-img {
+      height: 210px !important;
+      width: 100% !important;
+  }
+
+  .user-profile-text h1 {
+      font-size: 1.6rem !important;
+      text-align: center !important;
+  }
+
+  /* Buttons fix */
+  .user-profile-btns {
+      grid-template-columns: 1fr !important;
+      height: auto !important;
+  }
+
+  .user-profile-btns a {
+      width: 100% !important;
+      padding: 14px 0 !important;
+      border-right: none !important;
+  }
+
+  /* ---------------------- ABOUT ---------------------------- */
+  #about-us {
+      padding: 40px 20px !important;
+  }
+
+  #about-us h1 span {
+      font-size: 1.8rem !important;
+      padding: 4px 12px !important;
+  }
+
+  #about-us h3 {
+      font-size: 1rem !important;
+  }
+
+  .project-container-about {
+      grid-template-columns: 1fr !important;
+      gap: 25px !important;
+  }
+
+  /* ---------------------- SKILLS --------------------------- */
+  .skill-box-content {
+      gap: 8px !important;
+  }
+
+  .skill-box-content i {
+      font-size: 1.4rem !important;
+  }
+
+  .skill-box-percentage {
+      margin-top: 5px !important;
+      position: static !important;
+  }
+
+  /* ---------------------- SERVICES ------------------------- */
+  .service-box {
+      width: 100% !important;
+      margin: 0 auto !important;
+      overflow: visible !important;
+  }
+
+  .service-box-heading strong {
+      text-align: center !important;
+      width: 100% !important;
+      display: block !important;
+  }
+
+  /* Make the image override the box naturally */
+  .service-box img {
+      width: 100% !important;
+      height: auto !important;
+      margin-top: 10px !important;
+  }
+
+  /* ---------------------- PRICING -------------------------- */
+  .plan-box {
+      width: 100% !important;
+      margin: 15px 0 !important;
+      overflow: hidden !important;
+  }
+}
+
+/* Extra small screens — 480px */
+@media (max-width: 480px) {
+
+  header ul {
+      grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .user-profile-text h1 {
+      font-size: 1.35rem !important;
+  }
+
+  #about-us h1 span {
+      font-size: 1.45rem !important;
+  }
+
+  /* Smaller service icons */
+  .service-box-heading .service-box-icon img {
+      width: 55px !important;
+      height: 55px !important;
+  }
+
+  #graphic-img {
+      width: 100px !important;
+  }
+}
+/* =============================================== */
+/*   EDUCATION & WORK — COMPLETE MOBILE FIX        */
+/* =============================================== */
+@media (max-width: 768px) {
+
+  /* Main wrapper becomes single column */
+  .edu-work-container {
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !important;
+      gap: 30px !important;
+  }
+
+  /* Education & Work blocks full width */
+  .edu-container,
+  .work-container {
+      width: 100% !important;
+  }
+
+  /* Labels (Education / Work) */
+  .edu-work-label {
+      font-size: 1rem !important;
+      padding: 10px 0 !important;
+      display: block !important;
+      width: 100% !important;
+      text-align: left !important;
+  }
+
+  /* Box container becomes stack layout */
+  .edu-work-box-container {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 20px !important;
+      width: 100% !important;
+  }
+
+  /* Individual boxes */
+  .edu-work-box {
+      width: 100% !important;
+      padding: 15px !important;
+      border-radius: 10px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 6px !important;
+      background: #ffffff05 !important; /* Soft background */
+      backdrop-filter: blur(4px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  /* Reduce long text wrapping issues */
+  .edu-work-box * {
+      width: 100% !important;
+      overflow-wrap: break-word !important;
+  }
+
+  /* Year */
+  .edu-work-year {
+      font-size: 0.9rem !important;
+      font-weight: 600 !important;
+      color: #15afff !important;
+  }
+
+  /* Title and locations */
+  .edu-work-box strong {
+      font-size: 1rem !important;
+  }
+
+  .Edu-work-location {
+      font-size: 0.9rem !important;
+      opacity: 0.9 !important;
+  }
+
+  /* Paragraph */
+  .edu-work-box p {
+      font-size: 0.9rem !important;
+      line-height: 1.4 !important;
+      margin-top: 3px !important;
+  }
+
+  /* Section heading */
+  #edu-work h3 {
+      font-size: 1.3rem !important;
+      text-align: center !important;
+  }
+}
+
+
+/* =============================================== */
+/*   EXTRA SMALL (PHONES BELOW 480PX)              */
+/* =============================================== */
+@media (max-width: 480px) {
+  .edu-work-container {
+      gap: 25px !important;
+  }
+
+  .edu-work-box {
+      padding: 12px !important;
+  }
+
+  .edu-work-year {
+      font-size: 0.85rem !important;
+  }
+
+  .edu-work-box strong {
+      font-size: 0.95rem !important;
+  }
+
+  #edu-work h3 {
+      font-size: 1.15rem !important;
+  }
+}
+
+/* MOBILE CONTACT RESPONSIVENESS */
+@media (max-width: 768px) {
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .contact-box {
+    width: 100%;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-box-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+  }
+
+  .contact-box-icon strong {
+    font-size: 18px;
+  }
+
+  .contact-map {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-map iframe {
+    width: 100% !important;
+    height: 250px !important;
+    border-radius: 12px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .contact-box {
+    padding: 15px;
+    align-items: center;
+  gap: 8px; /* small gap between icon and text */
+    
+  }
+
+  .contact-box-icon strong {
+    display: none !important;
+    font-size: 16px;
+  }
+
+  .contact-map iframe {
+   width: 100% !important;
+  height: 100% !important;
+  min-height: 200px; /* optional, set a minimum height */
+  display: block;
+  border: 0;
+  }
+  .contact-map {
+  width: 100%;
+  height: 400px; /* or any height you want */
+  overflow: hidden;
+  border-radius: 10px; /* optional styling */
+}
+
+}

@@ -115,6 +115,8 @@ var swiper = new Swiper(".mySwiper", {
              // store the mode in the local storage.
              localStorage.setItem("mode", isLightMode ? "light" : "dark");
       
+
+
                 ///// nav auto active class code.
                const Section = document.querySelectorAll("section");
                const navLinks = document.querySelectorAll("ul li a");
@@ -132,10 +134,24 @@ var swiper = new Swiper(".mySwiper", {
                         currentSection = section.getAttribute("id");
                      }
                   })
+                  /// now we create another for each loop to remove and add active class to the nav links.
+                  navLinks.forEach((link) =>{
+                     link.classList.remove("active");
+                     // a condition to check which link should have the active class.
+                     if(link.getAttribute("href") === `#${currentSection}`){
+                        link.classList.add("active"); // we add the active class here.
+                     }
+                  })
                }
       
+
+               /// when the user scrooll the window the active class will change accordingly.
+               window.addEventListener("scroll", activateNavLink);
             })
 
          
 
     });
+
+    //// Initaialize AOS Animation
+      AOS.init();
